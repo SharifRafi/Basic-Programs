@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExtandedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="81i4Q+PNopL._SL1164_" translatesAutoresizingMaskIntoConstraints="NO" id="vCp-OA-nwj">
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ODX-BL-hMR"/>
+                                    <constraint firstAttribute="width" constant="300" id="k3f-SE-tfK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expand the Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0a-CY-11l">
+                                <rect key="frame" x="57" y="59" width="300" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-0o-lgn">
+                                <rect key="frame" x="100" y="842" width="214" height="45"/>
+                                <color key="backgroundColor" red="0.80281110330000005" green="0.94341673059999998" blue="0.54053063420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0PL-4L-yJe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvh-8H-z9i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O0a-CY-11l" secondAttribute="trailing" constant="57" id="0Yz-Yb-Uxl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKM-0o-lgn" secondAttribute="trailing" constant="100" id="1o8-ro-4uv"/>
+                            <constraint firstItem="vCp-OA-nwj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Vn-mQ-UXM"/>
+                            <constraint firstItem="vCp-OA-nwj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5mI-G0-4s9"/>
+                            <constraint firstItem="MKM-0o-lgn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="25" id="L4v-IR-urD"/>
+                            <constraint firstItem="O0a-CY-11l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="LjV-mo-CGz"/>
+                            <constraint firstItem="MKM-0o-lgn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="SRG-Nm-8AG"/>
+                            <constraint firstItem="MKM-0o-lgn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VpY-fy-PhY"/>
+                            <constraint firstItem="vCp-OA-nwj" firstAttribute="top" secondItem="O0a-CY-11l" secondAttribute="bottom" constant="210" id="YLw-bU-K8r"/>
+                            <constraint firstItem="O0a-CY-11l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="uYY-Df-GEK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="MKM-0o-lgn" id="Im2-KR-TpS"/>
+                        <outlet property="distanceBetweenImageAndTitel" destination="YLw-bU-K8r" id="IPz-82-qcm"/>
+                        <outlet property="hightOfImage" destination="ODX-BL-hMR" id="jB6-sl-GxO"/>
+                        <outlet property="imageView" destination="vCp-OA-nwj" id="JC1-dP-8Co"/>
+                        <outlet property="titelFromTop" destination="uYY-Df-GEK" id="eeG-pp-SIN"/>
+                        <outlet property="titelText" destination="O0a-CY-11l" id="du8-Sc-Spp"/>
+                        <outlet property="weightOfImage" destination="k3f-SE-tfK" id="IEI-Go-XvJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="81i4Q+PNopL._SL1164_" width="1140" height="1164"/>
+    </resources>
+</document>
